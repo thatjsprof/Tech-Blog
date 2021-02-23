@@ -1,0 +1,40 @@
+.navigation {
+    background-color: $color-grey-dark;
+    padding: 2rem 3rem;
+    @include clearfix;
+
+    &__links {
+        float: left;
+        margin-top: .65rem;
+    }
+
+    &__logo {
+        float: right;
+        position: relative;
+        height: 3rem;
+        width: 6rem;
+        cursor: pointer;
+
+        &--image {
+            background-image: url(../images/logo/logo-white.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+        }
+    }
+    
+    &__link {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+
+        & > a {
+            color: $color-white;
+        }
+    }
+}

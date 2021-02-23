@@ -1,0 +1,46 @@
+.card {
+    border-radius: .7rem;
+    overflow: hidden;
+    border: 1px solid $color-grey-light-2;
+    transition: transform .4s;
+
+    &__image {
+        height: 20vh;
+        background-size: cover;
+        
+        &--1 {
+            background-image: url(../images/blog/blog-1.jpg);
+        }
+
+        &--2 {
+            background-image: url(../images/blog/blog-2.jpg);
+        }
+
+        &--3 {
+            background-image: url(../images/blog/blog-3.jpg);
+        }
+    }
+
+    &__body {
+        padding: 3rem;
+        text-align: center;
+    }
+
+    &__text {
+        &--1 {
+            text-transform: uppercase;
+            font-weight: 700;
+            color: $color-grey-dark;
+            margin-top: -.8rem
+        }
+
+        &--2 {
+            margin-top: 1rem;
+        }
+    }
+
+    &:hover {
+        box-shadow: 0rem .1rem 2rem rgba($color-black, .2);
+        transform: translateY(-1rem);
+    }
+}

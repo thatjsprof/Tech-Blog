@@ -1,0 +1,15 @@
+.posts-page, .posts-single-page {
+    // text-align: center;
+}
+
+.new-post {
+    @include clearfix;
+
+    a.new {
+        float: left;
+    }
+
+    a.logout {
+        float: right;
+    }
+}

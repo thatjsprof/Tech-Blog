@@ -1,0 +1,39 @@
+<template>
+    <div class="form__group">
+        <label class="form__group--label"><slot /></label>
+        <input
+            class="form__group--input"
+            v-if="controlType === 'input'"
+            v-bind="$attrs"
+            :value="value"
+            @input="$emit('input', $event.target.value)"
+        >
+        <textarea
+            class="form__group--textarea"
+            v-if="controlType === 'textarea'"
+            rows="10"
+            :value="value"
+            @input="$emit('input', $event.target.value)"
+        >
+        </textarea>
+    </div>
+</template>
+  
+<script>
+    export default {
+        name: 'AppInputControl',
+        props: {
+            controlType: {
+                type: String,
+                default: 'input'
+            },
+            value: {
+                type: String,
+                default: ''
+            }
+        }
+    }
+</script>
+  
+  
+  

@@ -1,0 +1,25 @@
+.form__group {
+    & > * {
+        display: block;
+        width: 100%;
+    }
+
+    &--label {
+        margin: 2rem 0;
+    }
+
+    &--input, &--textarea {
+        border-radius: .8rem;
+        border: 1px solid rgba($color-grey-dark, .6);
+        transition: all .3s;
+
+        &:focus, &:active {
+            outline: none;
+            border: 1px solid $color-primary;
+        }
+    }
+
+    &--input {
+        padding: .8rem;
+    }
+}

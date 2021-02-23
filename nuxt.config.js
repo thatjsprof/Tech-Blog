@@ -56,7 +56,7 @@ export default {
 
   env: {
     baseUrl: process.env.BASE_URL || 'https://tech-blog-f3fbc-default-rtdb.firebaseio.com',
-    fbAPIKey: 'apikey',
+    fbAPIKey: 'AIzaSyCKDIX1Xi7cDKiE4RbTZr0U0Ki7N9epERM',
     Host: process.env.HOST || 'localhost',
     Port: process.env.PORT || 3000
   },

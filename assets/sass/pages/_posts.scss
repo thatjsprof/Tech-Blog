@@ -5,11 +5,11 @@
 .new-post {
     @include clearfix;
 
-    a.new {
+    button.new {
         float: left;
     }
 
-    a.logout {
+    button.logout {
         float: right;
     }
 }

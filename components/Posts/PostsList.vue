@@ -6,7 +6,8 @@
             :id="post.id"
             :category="post.category"
             :previewText="post.previewText"
-            image="post.image"
+            :isAdmin="isAdmin"
+            :image="post.image"
         />
     </section>
 </template>
@@ -21,6 +22,10 @@
         props: {
             posts: {
                 type: Array,
+                required: true
+            },
+            isAdmin: {
+                type: Boolean,
                 required: false
             }
         }

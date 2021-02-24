@@ -1,11 +1,11 @@
 <template>
-    <a
+    <button
         :class="classes"
-        v-bind="$attr"
+        v-bind="$attrs"
         v-on="$listeners"
     >    
         <slot />
-    </a>
+    </button>
 </template>
 
 <script>

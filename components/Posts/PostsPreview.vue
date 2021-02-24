@@ -1,7 +1,7 @@
 <template>
     <nuxt-link :to="postLink" class="col-1-of-3">
         <div class="card">
-            <div class="card__image card__image--1"></div>
+            <div class="card__image" :style="{ backgroundImage: 'url(' + image + ')' }"></div>
             <div class="card__body">
                 <div class="card__text">
                     <p class="card__text--1">{{ category }}</p>
@@ -16,24 +16,24 @@
     export default {
         props: {
             id: {
-                type: Number,
-                required: false
+                type: String,
+                required: true
             },
             category: {
                 type: String,
-                required: false
+                required: true
             },
             previewText: {
                 type: String,
-                required: false
+                required: true
             },
             image: {
                 type: String,
-                required: false
+                required: true
             },
             isAdmin: {
                 type: Boolean,
-                required: false
+                required: true
             }
         },
         computed: {

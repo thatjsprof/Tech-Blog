@@ -1,9 +1,11 @@
 <template>
     <div class="admin-post-page">
-        <h1 class="u-margin-top-big">Edit Post</h1>
-        <section class="update-form">
-            <AdminPostForm :post="loadedPost" @submit="onSubmitted"/>
-        </section>
+        <div class="row">
+            <h1 class="u-margin-top-big">Edit Post</h1>
+            <section class="update-form">
+                <AdminPostForm :post="loadedPost" @submit="onSubmitted"/>
+            </section>
+        </div>
     </div>
 </template>
   
@@ -12,12 +14,12 @@
     
     export default {
         layout: 'admin',
-        middleware: ['auth', 'check-auth'],
+        middleware: ['check-auth', 'auth'],
         asyncData (context) {
-            return context.app.$axios.$get('/posts/' + context.params.id + '.json')
+            return context.app.$axios.$get('/posts/' + context.params.postId + '.json')
             .then((data) => {
                 return {
-                    loadedPost: { ...data, id: context.params.id }
+                    loadedPost: { ...data, id: context.params.postId }
                 }
             })
             .catch((err) => {
@@ -27,8 +29,13 @@
         methods: {
             onSubmitted (editedPost) {
                 this.$store.dispatch('editPost', editedPost)
-                .then(() => {
-                    this.$router.push('/admin')
+                .then((res) => {
+                    if (res?.response?.status) {
+                        this.$toastr.e('Could not edit post')
+                    } else {
+                        this.$toastr.s('Post Edited')
+                        this.$router.push('/admin')
+                    }
                 })
             }
         }

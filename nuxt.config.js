@@ -1,3 +1,5 @@
+const bodyParser = require('body-parser')
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -30,7 +32,9 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~plugins/core-component.js',
-    '~plugins/date-filter.js'
+    '~plugins/date-filter.js',
+    '~plugins/helpers.js',
+    { src: '~plugins/toastr.js', mode: 'client'}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -52,6 +56,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    transpile: ['vue-toastr']
   },
 
   env: {
@@ -65,7 +70,7 @@ export default {
     linkActiveClass: 'active'
   },
 
-  transition: {
+  pageTransition: {
     name: 'fade',
     mode: 'out-in'
   },

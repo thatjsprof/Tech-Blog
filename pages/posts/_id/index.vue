@@ -1,11 +1,14 @@
 <template>
     <div class="posts-single-page">
-        <div class="row" style="text-align: center;">
-            <h1 class="post-title u-margin-top-big">
+        <div class="row text-center">
+            <h1 class="post-title u-margin-top-big u-margin-bottom-big">
                 {{ loadedPost.category }}
             </h1>
-            <p>
+            <p class="u-margin-bottom-big">
                 {{ loadedPost.previewText }}
+            </p>
+            <p>
+                Last updated: {{ loadedPost.updatedDate | date}}
             </p>
         </div>
     </div>

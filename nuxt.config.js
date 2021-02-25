@@ -70,6 +70,11 @@ export default {
     linkActiveClass: 'active'
   },
 
+  target: 'static',
+  router: {
+    base: '/Tech-Blog/'
+  },
+
   pageTransition: {
     name: 'fade',
     mode: 'out-in'

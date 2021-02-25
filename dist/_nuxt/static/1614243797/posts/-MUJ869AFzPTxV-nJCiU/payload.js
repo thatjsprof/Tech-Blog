@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/posts/-MUJ869AFzPTxV-nJCiU", {data:[{loadedPost:{category:"News",id:"-MUJ869AFzPTxV-nJCiU",image:"https:\u002F\u002Fcdn.pixabay.com\u002Fphoto\u002F2014\u002F10\u002F23\u002F10\u002F10\u002Fdollars-499481_960_720.jpg",previewText:"Stripe acquires Paystack",updatedDate:"2021-02-24T13:04:53.076Z"}}],fetch:{},mutations:[]});

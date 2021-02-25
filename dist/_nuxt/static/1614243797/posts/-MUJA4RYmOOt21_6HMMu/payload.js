@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/posts/-MUJA4RYmOOt21_6HMMu", {data:[{loadedPost:{category:"Science",id:"-MUJA4RYmOOt21_6HMMu",image:"https:\u002F\u002Fcdn.pixabay.com\u002Fphoto\u002F2011\u002F12\u002F13\u002F14\u002F31\u002Fearth-11015__340.jpg",previewText:"Is the earth round?",updatedDate:"2021-02-24T13:13:30.233Z"}}],fetch:{},mutations:[]});

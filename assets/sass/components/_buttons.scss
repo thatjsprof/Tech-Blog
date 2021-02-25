@@ -12,7 +12,7 @@
     cursor: pointer;
 
     @include respond (phone) {
-        font-size: $font-size-phone;
+        font-size: $font-size-button;
     }
     
 

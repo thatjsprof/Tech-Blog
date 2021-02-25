@@ -2,7 +2,11 @@
     background-color: $color-grey-dark;
     padding: 2rem 3rem;
     text-align: center;
-
+    clear: both;
+    position: relative;
+    height: 6rem;
+    margin-top: -6rem;
+    
     &__link {
         display: inline-block;
 

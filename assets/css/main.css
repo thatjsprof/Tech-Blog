@@ -70,7 +70,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     body {
       padding: .5rem;
-      font-size: 1.5rem; } }
+      font-size: 1.2rem; } }
 
 a {
   list-style: none;
@@ -271,7 +271,11 @@ a {
 .footer {
   background-color: #777;
   padding: 2rem 3rem;
-  text-align: center; }
+  text-align: center;
+  clear: both;
+  position: relative;
+  height: 6rem;
+  margin-top: -6rem; }
   .footer__link {
     display: inline-block; }
     .footer__link:not(:last-child) {
@@ -288,7 +292,7 @@ a {
     display: table; }
   @media only screen and (max-width: 37.5em) {
     .navigation {
-      font-size: 1.5rem; } }
+      font-size: 1.2rem; } }
   .navigation__links {
     float: left;
     margin-top: .65rem; }

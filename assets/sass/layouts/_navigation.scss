@@ -3,6 +3,10 @@
     padding: 2rem 3rem;
     @include clearfix;
 
+    @include respond (phone) {
+        font-size: $font-size-phone;
+    }
+
     &__links {
         float: left;
         margin-top: .65rem;

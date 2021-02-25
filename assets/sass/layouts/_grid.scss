@@ -9,6 +9,10 @@
         @include respond (tab-port) {
             margin-bottom: $gutter-vertical-small;
         }
+
+        @include respond (phone) {
+            margin-bottom: $gutter-vertical-small;
+        }
     }
     
     @include respond (tab-port) {

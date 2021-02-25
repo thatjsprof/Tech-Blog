@@ -10,6 +10,10 @@
     animation-delay: .5s;
     animation-fill-mode: backwards;
     cursor: pointer;
+
+    @include respond (phone) {
+        font-size: $font-size-phone;
+    }
     
 
     &::after {

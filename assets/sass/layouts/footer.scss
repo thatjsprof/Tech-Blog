@@ -1,0 +1,17 @@
+.footer {
+    background-color: $color-grey-dark;
+    padding: 2rem 3rem;
+    text-align: center;
+
+    &__link {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+
+        & > a {
+            color: $color-white;
+        }
+    }
+}

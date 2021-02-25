@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/posts/-MUJABO0NXlDmbHha8xA", {data:[{loadedPost:{category:"Motivation",id:"-MUJABO0NXlDmbHha8xA",image:"https:\u002F\u002Fcdn.pixabay.com\u002Fphoto\u002F2016\u002F02\u002F19\u002F11\u002F37\u002Flens-1209823__340.jpg",previewText:"How do you focus?",updatedDate:"2021-02-24T13:13:58.817Z"}}],fetch:{},mutations:[]});

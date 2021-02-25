@@ -2,12 +2,13 @@
     background-image: linear-gradient(to right bottom, rgba($color-primary-light, .8), rgba($color-primary-dark, .8)), url(https://images.pexels.com/photos/6469/red-hands-woman-creative.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-size: cover;
     height: 50vh;
+    width: 100%;
     position: relative;
     margin-bottom: 5rem;
 
     &__text-box {
         @include absCenter;
         text-align: center;
-        max-width: 100%;
+        width: 100%;
     }
 }

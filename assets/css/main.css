@@ -70,7 +70,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     body {
       padding: .5rem;
-      font-size: 1.2rem; } }
+      font-size: 1.5rem; } }
 
 a {
   list-style: none;
@@ -86,7 +86,7 @@ a {
       font-size: 2.4rem; } }
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
-      font-size: 1.8rem; } }
+      font-size: 2.2rem; } }
   .heading-primary span {
     display: block;
     backface-visibility: hidden; }
@@ -128,7 +128,7 @@ a {
   cursor: pointer; }
   @media only screen and (max-width: 37.5em) {
     .btn {
-      font-size: 1.2rem; } }
+      font-size: 1.5rem; } }
   .btn::after {
     content: "";
     background-color: #fff;
@@ -148,7 +148,6 @@ a {
     background-color: #fff; }
 
 .btn-text {
-  font-size: 1.6rem;
   color: #55c57a;
   display: inline-block;
   text-decoration: none;
@@ -258,6 +257,7 @@ a {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(https://images.pexels.com/photos/6469/red-hands-woman-creative.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-size: cover;
   height: 50vh;
+  width: 100%;
   position: relative;
   margin-bottom: 5rem; }
   .header__text-box {
@@ -266,7 +266,18 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    max-width: 100%; }
+    width: 100%; }
+
+.footer {
+  background-color: #777;
+  padding: 2rem 3rem;
+  text-align: center; }
+  .footer__link {
+    display: inline-block; }
+    .footer__link:not(:last-child) {
+      margin-right: 2rem; }
+    .footer__link > a {
+      color: #fff; }
 
 .navigation {
   background-color: #777;
@@ -277,7 +288,7 @@ a {
     display: table; }
   @media only screen and (max-width: 37.5em) {
     .navigation {
-      font-size: 1.2rem; } }
+      font-size: 1.5rem; } }
   .navigation__links {
     float: left;
     margin-top: .65rem; }

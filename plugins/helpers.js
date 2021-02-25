@@ -1,10 +1,10 @@
 export default ({ app }, inject) => {
-    inject('checkStatus', ( code ) => {
+    inject('checkStatus', ( code, isLogin ) => {
         function errorMessage (errorCode) {
             let message
             switch (errorCode) {
                 case 400:
-                    message = 'User does not exist'
+                    message = isLogin ? 'User does not exist' : 'Email exists already'
                     break
                 case 500:
                     message = 'put error message'

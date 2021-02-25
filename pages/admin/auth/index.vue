@@ -41,7 +41,7 @@
                         .then((res) => {
                             if (res?.response?.status) {
                                 let response = res?.response?.status || null
-                                let message = this.$checkStatus (response)
+                                let message = this.$checkStatus (response, this.isLogin)
 
                                 if (!message) {
                                     this.$router.push('/admin')

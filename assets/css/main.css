@@ -64,6 +64,13 @@ body {
   font-family: "Lato", "sans-serif";
   font-size: 1.6rem;
   padding: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: .5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    body {
+      padding: .5rem;
+      font-size: 1.2rem; } }
 
 a {
   list-style: none;

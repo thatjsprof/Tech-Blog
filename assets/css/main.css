@@ -242,7 +242,7 @@ a {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .header {
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../images/background.jpeg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(https://images.pexels.com/photos/6469/red-hands-woman-creative.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-size: cover;
   height: 50vh;
   position: relative;

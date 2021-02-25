@@ -3,9 +3,10 @@
     padding: 2rem 3rem;
     text-align: center;
     clear: both;
-    position: relative;
+    position: absolute;
     height: 6rem;
-    margin-top: -6rem;
+    width: 97vw;
+    bottom: .5rem;
     
     &__link {
         display: inline-block;

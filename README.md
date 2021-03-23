@@ -1,2 +1,2 @@
 # Tech Blog
-A little side project in nuxt. 
+A little intermediate project in nuxt. 
